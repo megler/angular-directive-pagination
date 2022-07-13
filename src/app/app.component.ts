@@ -8,13 +8,6 @@ import {PaginationInstance} from 'ngx-pagination';
 })
 export class AppComponent {
   
-  RANGE = function* (from:number, to:number, step:number = 1) {
-    let value:number = from;
-    while (value <= to) {
-      yield value;
-      value += step;
-    }
-  }
   page: number = 1
     
   images = [ 
