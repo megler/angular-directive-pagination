@@ -8,8 +8,15 @@ import {PaginationInstance} from 'ngx-pagination';
 })
 export class AppComponent {
   
+  RANGE = function* (from:number, to:number, step:number = 1) {
+    let value:number = from;
+    while (value <= to) {
+      yield value;
+      value += step;
+    }
+  }
   page: number = 1
-   
+    
   images = [ 
     {
       title: 'At the beach',
@@ -72,6 +79,6 @@ export class AppComponent {
       url: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80'
     }
   ]
-  
+
   
 }

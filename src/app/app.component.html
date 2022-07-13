@@ -1,7 +1,8 @@
-<pagination-controls [maxSize]=5 class="foo" (pageChange)="page = $event"></pagination-controls>
+<!-- <pagination-controls [maxSize]=5 class="foo" (pageChange)="page = $event"></pagination-controls>
 <div *ngFor="let item of images | paginate: { itemsPerPage: 1, currentPage: page }">
   <h4>{{ images[page].title }}</h4>
   <img [src]="images[page].url" [alt]="images[page].title">
-</div>
+</div> -->
 
+<div *ngFor="let i of RANGE(2,10,2)">{{ i }}</div>
 
