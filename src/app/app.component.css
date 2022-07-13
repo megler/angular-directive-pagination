@@ -1,0 +1,37 @@
+.foo ::ng-deep .ngx-pagination li {
+    outline: 1px solid lightgray;
+    color: #0d6efd;
+}
+
+.foo ::ng-deep .ngx-pagination .current {
+background-color: #0d6efd;
+border-color: #0d6efd;
+color: white;
+padding: 0.375rem 0.75rem;
+}
+
+.foo ::ng-deep .ngx-pagination .disabled {    
+    padding: 0.375rem 0.75rem;
+    }
+
+.foo ::ng-deep .ngx-pagination li a  {
+    padding: 0.375rem 0.75rem;    
+}
+
+.foo ::ng-deep .ngx-pagination li a:hover {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    
+}
+
+.foo ::ng-deep .ngx-pagination li:last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    
+}
+
+.foo ::ng-deep .ngx-pagination li:first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    
+}

@@ -1,4 +1,7 @@
 # Pages
+A basic Angular project focused on directives. The original project created a paginator using Bootstrap5 from scratch, but it was missing necessary functionality such as restricting the amount of pages shown in the page controller. (eg. 20 total pages, but the controller should show only 5 at a time). After trying ngBootstrap, I moved to ngx-pagination which performed as expected. 
+
+I'm posting this project so if I need pagination in the future, I have read made code to refer to as custom CSS stying was needed to get this to look like Bootstrap5 pagination.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
